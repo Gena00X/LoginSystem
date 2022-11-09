@@ -64,7 +64,7 @@ int menu(){
 	cout << "\t2: Login\n";
 	cout << "\t3: Exit\n>>";
 	cin >> temp;
-	}while(!(string("1")<=temp<=string("3")));
+	}while(!(temp==string("1")|temp==string("2")|temp==string("3")));
 	return stoi( temp );
 }
 
