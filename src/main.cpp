@@ -2,6 +2,7 @@
 #include <string>
 #include <fstream>
 #include "rusinconsole.h"
+#include "userdata.hpp"
 using namespace std;
 /*
 1: Register
@@ -24,6 +25,8 @@ inline bool exists_test (const string& name) {
     ifstream f(name.c_str());
     return f.good();
 }
+
+
 
 int Menu();
 int Register();
@@ -51,6 +54,8 @@ int main(int argc, char* argv[]){
 		}
 	}while(i!=3);
 	cout << "Exiting..." << endl;
+	userdata ud;
+	cout << "ud name: " << ud.showname() << " ud pass: " << ud.showpass() << endl;
 	return 0;
 }
 
