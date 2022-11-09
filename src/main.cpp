@@ -46,8 +46,8 @@ int main(int argc, char* argv[]){
 				Login();
 				break;
 			case 3:
-				
-				
+				Exiting();
+				break;
 		}
 	}while(i!=3);
 	cout << "Exiting..." << endl;
@@ -56,7 +56,7 @@ int main(int argc, char* argv[]){
 
 
 
-int menu(){
+int Menu(){
 	string temp;
 	do{
 	cout << "Enter your choice:\n";
@@ -64,7 +64,7 @@ int menu(){
 	cout << "\t2: Login\n";
 	cout << "\t3: Exit\n>>";
 	cin >> temp;
-	}while(!(string("1")<=temp<=string("3")));
+	}while(!(string("1")<=temp&&temp<=string("3")));
 	return stoi( temp );
 }
 
