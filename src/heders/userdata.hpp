@@ -19,6 +19,8 @@ public:
 	{
 		return pass;
 	};
+	
+	
 };
 
 #endif //USERDATA_H
