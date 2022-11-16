@@ -74,7 +74,21 @@ int Menu(){
 }
 
 int Register(){
+	ofstream f;
 	cout<<"Register work\n";
+	cout<<"enter name:\n>>";
+	string name, pass;
+	cin>>name;
+	if (exists_test(name)){
+		cout << "user alredy registred!"; 
+		return -1;
+	}else{
+		f.open(name.c_str());
+	}
+	cout<<"enter pass:\n>>";
+	cin>>pass;
+	userdata ud(name, pass);
+	f<<ud;
 	return 0;
 }
 
@@ -87,3 +101,4 @@ int Exiting(){
 	cout<<"Exiting work\n";
 	return 0;
 }
+
