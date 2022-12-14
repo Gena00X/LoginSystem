@@ -77,13 +77,14 @@ int Register(){
 	ofstream f;
 	cout<<"Register work\n";
 	cout<<"enter name:\n>>";
-	string name, pass;
+	string name, pass, path;
 	cin>>name;
-	if (exists_test(name)){
-		cout << "user alredy registred!"; 
+	path="./../data/"+name;
+	if (exists_test(path)){
+		cout << "user alredy registred!\n"; 
 		return -1;
 	}else{
-		f.open(name.c_str());
+		f.open(path.c_str());
 	}
 	cout<<"enter pass:\n>>";
 	cin>>pass;
