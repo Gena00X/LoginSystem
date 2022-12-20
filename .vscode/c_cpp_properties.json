@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "src\\heders",
+                "H:\\CPP\\QtPrpjects\\ProjectsCPP\\my_special_heders"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "compilerPath": "D:/programs/visualstudio/VS2022IDE/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}
