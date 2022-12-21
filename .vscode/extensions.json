@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "fougas.msys2"
+        "fougas.msys2",
+        "twxs.cmake"
     ]
 }
