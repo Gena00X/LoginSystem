@@ -78,7 +78,7 @@ int Register(){
 	cout<<"Register work\n";
 	cout<<"enter name:\n>>";
 	string name, pass, path;
-	cin>>name;
+	getline(cin, name);
 	path="./../data/"+name;
 	if (exists_test(path)){
 		cout << "user alredy registred!\n"; 

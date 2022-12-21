@@ -3,9 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "src\\heders",
-                "H:\\CPP\\QtPrpjects\\ProjectsCPP\\my_special_heders"
+                "${default}"
             ],
             "defines": [
                 "_DEBUG",

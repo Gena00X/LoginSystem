@@ -8,12 +8,13 @@ set( SOURCES 		${SOURCES_DIR}/main.cpp )
 
 project(main)
 
+
 add_executable( main ${SOURCES} )
 include_directories(main 
 					${HEDERS_DIR} 
 					${MY_SPECIAL_HEDERS}
 					)
-
+message("CXX: " ${CMAKE_CXX_COMPILER})
 install(TARGETS main DESTINATION ${BINARY_DIR} )
 
 target_compile_features( main PRIVATE cxx_std_17 )
