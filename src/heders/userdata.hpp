@@ -38,6 +38,7 @@ public:
 };
 ofstream &operator<<(ofstream &fs, userdata &ud){
 	fs<<"name: "<< ud.showname()<<'\n'<<"pass: "<<ud.showpass()<<"\n\n";
+	return fs;
 }
 
 ifstream &operator>>(ifstream &fs, userdata &ud){

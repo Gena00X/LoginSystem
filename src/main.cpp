@@ -33,6 +33,16 @@ int Register();
 int Login();
 int Exiting();
 
+void getname(string &nm){
+	string buf;
+	cin >> buf;
+	nm = buf;
+	while(cin.peek()!='\n'){
+		cin>>buf;
+		nm = nm + " " + buf;
+	}
+}
+
 int main(int argc, char* argv[]){
 	if(argc==2) cout << "Hello "<<argv[1]<<"\nПривет "<<argv[1]<<endl;
 	else cout << "Hello World!\nПривет Мир!\n";
@@ -76,7 +86,8 @@ int Register(){
 	cout<<"Register work\n";
 	cout<<"enter name:\n>>";
 	string name, pass, path;
-	getline(cin, name);
+	//cin>>name;
+	getname(name);
 	path="./../data/"+name;
 	if (exists_test(path)){
 		cout << "user alredy registred!\n"; 

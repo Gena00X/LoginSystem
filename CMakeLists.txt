@@ -6,6 +6,9 @@ set( SOURCES_DIR 	${CMAKE_CURRENT_LIST_DIR}/src )
 set( HEDERS_DIR 	${CMAKE_CURRENT_LIST_DIR}/src/heders )
 set( SOURCES 		${SOURCES_DIR}/main.cpp )
 
+set(CMAKE_CXX_COMPILER "D:/programs/MSYS2/mingw64/bin/x86_64-w64-mingw32-g++.exe") #for x64 (MSYS2)
+set(CMAKE_C_COMPILER "D:/programs/MSYS2/mingw64/bin/x86_64-w64-mingw32-gcc.exe") #for x64 (MSYS2)
+
 project(main)
 
 
@@ -15,6 +18,7 @@ include_directories(main
 					${MY_SPECIAL_HEDERS}
 					)
 message("CXX: " ${CMAKE_CXX_COMPILER})
+message("C: " ${CMAKE_C_COMPILER})
 install(TARGETS main DESTINATION ${BINARY_DIR} )
 
 target_compile_features( main PRIVATE cxx_std_17 )
