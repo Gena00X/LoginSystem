@@ -46,6 +46,8 @@ int main(int argc, char* argv[]){
 				Login();
 				break;
 			case 3:
+				Exiting();
+				break;
 				
 				
 		}
